@@ -1,45 +1,38 @@
 <!doctype html>
 <html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Linux - by ATILLA</title>
 
-	<head>
-		<meta charset="utf-8">
+	<meta name="description" content="An small overview of Linux">
+	<meta name="author" content="Valentin Famelart, Thomas Papillon">
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
 
-		<title>Linux - by ATILLA</title>
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/theme/blood.css" id="theme">
+	<!-- Code syntax highlighting -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+	<!-- 960 Grid -->
+	<link rel="stylesheet" href="http://960.gs/css/960.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="css/font-awesome.css">
 
-		<meta name="description" content="An small overview of Linux">
-		<meta name="author" content="Valentin Famelart, Thomas Papillon">
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement( 'link' );
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName( 'head' )[0].appendChild( link );
+	</script>
 
-		<meta name="apple-mobile-web-app-capable" content="yes" />
-		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
-
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-
-		<link rel="stylesheet" href="css/reveal.css">
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="css/theme/blood.css" id="theme">
-
-		<!-- Code syntax highlighting -->
-		<link rel="stylesheet" href="lib/css/zenburn.css">
-
-		<!-- 960 Grid -->
-		<link rel="stylesheet" href="http://960.gs/css/960.css">
-
-		<!-- Font Awesome -->
-		<link rel="stylesheet" href="css/font-awesome.css">
-
-		<!-- Printing and PDF exports -->
-		<script>
-			var link = document.createElement( 'link' );
-			link.rel = 'stylesheet';
-			link.type = 'text/css';
-			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
-			document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-
-		<!--[if lt IE 9]>
-		<script src="lib/js/html5shiv.js"></script>
-		<![endif]-->
-	</head>
+	<!--[if lt IE 9]>
+	<script src="lib/js/html5shiv.js"></script>
+	<![endif]-->
+</head>
 
 	<body>
 		<div class="reveal">
@@ -50,119 +43,123 @@
 
 				<!-- Titre -->
 				<section>
-					<h1> Linux</h1>
-					<h3>What, when, how, why?</h3>
-					<footer>
-						<small>Valentin Famelart, Thomas Papillon</small><br>
-						<small>09/05/2015</small>
-					</footer>
+				<h1> Linux</h1>
+				<h3>What, when, how, why?</h3>
+				<footer>
+				<small>Valentin Famelart, Thomas Papillon</small><br>
+				<small>09/05/2015</small>
+				</footer>
 				</section>
 
 				<!-- Sommaire -->
 				<section>
-					<h2>Au programme...</h2>
-					<div class="container_12">
-						<div class="grid_4 fragment" data-fragment-index="0">
-							<h2><i class="fa fa-history"></i></h2>
-							<h5>Notions historiques</h5>
-						</div>
-						<div class="grid_4 fragment" data-fragment-index="1">
-							<h2><i class="fa fa-book"></i></h2>
-							<h5>Pourquoi ? Comment ?</h5>
-						</div>
-						<div class="grid_4 fragment" data-fragment-index="2">
-							<h2><i class="fa fa-level-up"></i></h2>
-							<h5>Expériences personnelles</h5>
-						</div>
-					</div>
+				<h2>Au programme...</h2>
+				<div class="container_12">
+				<div class="grid_4 fragment" data-fragment-index="0">
+				<h2><i class="fa fa-history"></i></h2>
+				<h5>Notions historiques</h5>
+				</div>
+				<div class="grid_4 fragment" data-fragment-index="1">
+				<h2><i class="fa fa-book"></i></h2>
+				<h5>Pourquoi ? Comment ?</h5>
+				</div>
+				<div class="grid_4 fragment" data-fragment-index="2">
+				<h2><i class="fa fa-level-up"></i></h2>
+				<h5>Expériences personnelles</h5>
+				</div>
+				</div>
 				</section>
 
 				<!-- Valz part  -->
 				<!-- Les debuts de linux  -->
 				<section class="stack">
-					<h2>La naissance de linux</h2>
-					<section>
-						<h4>Un système Unix libre : MINIX</h4>
-						<div class="container_12">
-							<div class="grid_6 fragment">
-								<img src="img/ast.jpg" height="250px" style="margin-top: 10%">
-								<p>Andrew S. Tanenbaum</p>
-							</div>
-							<div class="grid_6 fragment" style="margin-top: 10%">
-								<ul>
-									<li><i class="fa fa-thumbs-o-up"></i></li>
-									<li>Open Source</li>
-									<li></i> Système simple</li>
-									<hr>
-									<li><i class="fa fa-thumbs-o-down"></i></li>
-									<li>Développement partiel</li>
-									<li>Licence éducative</li>
-								</ul>
-							</div>
-						</div>
-					</section>
+				<h2>La naissance de linux</h2>
+				<section>
+				<h4>Un système Unix libre : MINIX</h4>
+				<div class="container_12">
+				<div class="grid_6 fragment">
+				  <img src="img/ast.jpg" height="250px" style="margin-top: 10%">
+				  <p>Andrew S. Tanenbaum</p>
+				</div>
+				<div class="grid_6 fragment" style="margin-top: 10%">
+				  <ul>
+				    <li><i class="fa fa-thumbs-o-up"></i></li>
+				    <li>Open Source</li>
+				    <li></i> Système simple</li>
+				    <hr>
+				    <li><i class="fa fa-thumbs-o-down"></i></li>
+				    <li>Développement partiel</li>
+				    <li>Licence éducative</li>
+				  </ul>
+				</div>
+				</div>
+				</section>
 
-					<section>
-						<h4>Un homme : Linus Torvalds</h4>
-						<div class="container_12">
-							<div class="grid_4">
-								<img src="img/torvalds.jpeg" height="250px" style="margin-bottom: 10%">
-							</div>
+				<section>
+				<h4>Un homme : Linus Torvalds</h4>
+				<div class="container_12">
+				<div class="grid_4">
+				  <img src="img/torvalds.jpeg" height="250px" style="margin-bottom: 10%">
+				</div>
 
-							<div class="grid_8 fragment" style="margin-top: 5%">
-								<ul>
-									<li>Curieux de découvrir les OS</li>
-									<li>Bloqué par la faible compatibilité matérielle de MINIX</li>
-									<li>Restriction de la licence d'utilisation de MINIX.</li>
-								</ul>
-							</div>
-						</div>
-					</section>
+				<div class="grid_8 fragment" style="margin-top: 5%">
+				  <ul>
+				    <li>Curieux de découvrir les OS</li>
+				    <li>Bloqué par la faible compatibilité matérielle de MINIX</li>
+				    <li>Restriction de la licence d'utilisation de MINIX.</li>
+				  </ul>
+				</div>
+				</div>
+				</section>
 
-					<section>
-						<h4>Deux visions : un combat</h4>
-						<div class="container_12" style="margin-top: 5%">
-							<div class="grid_6">
-								<h4>Tanenbaum</h4>
-								<blockquote style="margin: 5%; padding : 5%; width : auto;">This binary contains the process management, memory management, file system and the rest</blocquote>
-							</div>
-							<div class="grid_6">
-								<h4>Torvalds</h4>
-								<blockquote style="margin: 5%; padding : 5%; width : auto;">The file system, I/O drivers and memory management are separate processes, outside of the kernel</blocquote>
-							</div>
-						</div>
-					</section>
+				<section>
+				<h4>Deux visions : un combat</h4>
+				<div class="container_12" style="margin-top: 5%">
+				<div class="grid_6">
+				  <h4>Tanenbaum</h4>
+				  <blockquote style="margin: 5%; padding : 5%; width : auto;">The file system, I/O drivers and memory management are separate processes, outside of the kernel</blocquote>
+				</div>
+				<div class="grid_6">
+				  <h4>Torvalds</h4>
+				  <blockquote style="margin: 5%; padding : 5%; width : auto;">This binary contains the process management, memory management, file system and the rest</blocquote>
+				</div>
+				</div>
+				</section>
 
-					<section data-transition="fade-out">
-							<h3><span class="fragment">Minix</span><span class="fragment"> + L. Torvalds</span><span class="fragment"> = Freaks</span></h3>
-					</section>
+				<section data-transition="fade-out">
+				<h3><span class="fragment">Minix</span><span class="fragment"> + L. Torvalds</span><span class="fragment"> = Freaks</span></h3>
+				</section>
 
-					<section data-transition="fade-in">
-							<p>Ouverture à la distribution sous licence libre</p>
-							<h3>Et Freaks devient Linux</h3>
-							<h4 class="fragment highlight-blue">Le 5 octobre 1991 <i class="fa fa-birthday-cake"></i></h4>
-					</section>
+				<section data-transition="fade-in">
+				<p>Ouverture à la distribution sous licence libre</p>
+				<h3>Et Freaks devient Linux</h3>
+				<h4 class="fragment highlight-blue">Le 5 octobre 1991 <i class="fa fa-birthday-cake"></i></h4>
+				</section>
 
 
-        </section>
+				</section>
 
 				<!-- Open source / Free software -->
 				<section class="stack">
 					<h2>Free software</h2>
+
 					<section>
 						<h4>Le déclencheur</h4>
 						<div class="container_12">
 							<div class="grid_7">
-								<ul>
-									<li>Une fermeture des logiciels</li>
-									<li>Une restriction des droits</li>
-									<li>La conviction d'un homme</li>
+							  <ul>
+							    <br>
+							    <li>Une fermeture des logiciels</li>
+							    <li>Une restriction des droits</li>
+							    <li>La conviction d'un homme</li>
+								</ul>
 							</div>
 							<div class="grid_5">
-								<img src="img/StallmanVsOReilly.jpg"/>
+							  <img src="img/StallmanVsOReilly.jpg"/>
 							</div>
 						</div>
 					</section>
+
 					<section>
 						<h4>La naissance</h4>
 						<p>Création de la Free Software Foundation <br>par R. Stallman en 1985</p>
@@ -176,10 +173,10 @@
 						<h4>Les implications</h4>
 						<blockquote style="padding : 5%;">
 							<ol>
-								<li>The freedom to use software any way one wishes</li>
-								<li>The freedom to modify it to do whatever you want it to</li>
-								<li>The freedom to pass it on to others</li>
-								<li>The freedom to distribute your modifications to others</li>
+							  <li class="fragment">La liberté d'utiliser un logiciel comme on le désire</li>
+							  <li class="fragment">La liberté de le modifier pour en faire ce qu'on désire</li>
+							  <li class="fragment">La liberté de le partager aux autres</li>
+								<li class="fragment">La liberté de distribuer ses modifications aux autres</li>
 							</ol>
 						</blockquote>
 					</section>
@@ -188,290 +185,304 @@
 				<!-- Linux en nombres -->
 				<section class="stack">
 					<h2>Linux in numbers</h2>
+
 					<section>
 						<h4>Kernel & Lignes de code</h4>
 					</section>
+
 					<section>
 						<h4>Linux & évolution</h4>
 					</section>
+
 					<section>
 						<h4>Activité Linux</h4>
 					</section>
-
 				</section>
 
 				<!-- Linux aujourd'hui -->
 				<section class="stack">
-            <h2>Autour de Linux</h2>
+					<h2>Autour de Linux</h2>
 
-            <section>
-                <div class="container_12">
-                    <div class="grid_12">
-                        <p>Autres distributions Linux</p>
-                        <p>Mais aussi autres systèmes d'exploitations similaires !</p>
-                    </div>
-					      </div>
-            </section>
+					<section>
+					  <div class="container_12">
+					    <div class="grid_12">
+					      <p>Autres distributions Linux</p>
+					      <p>Mais aussi autres systèmes d'exploitations similaires !</p>
+					    </div>
+					  </div>
+					</section>
 
-            <section>
-                <h5>*BSD</h5>
-                <div class="container_12">
-										<div class="grid_5">
-										    <img src="img/freebsd.png"/>
-										</div>
-                    <div class="grid_7">
-                        <p>Descend d'UNIX</p>
-                        <p>Partage des caractéristiques avec l'architecture de GNU/Linux</p>
-                        <p>Jails, ports, ...</p>
-                    </div>
-					      </div>
-            </section>
+					<section>
+					  <h5>*BSD</h5>
+					  <div class="container_12">
+					    <div class="grid_5">
+					      <img src="img/freebsd.png"/>
+					    </div>
+					    <div class="grid_7">
+					      <p>Descend d'UNIX</p>
+					      <p>Partage des caractéristiques avec l'architecture de GNU/Linux</p>
+					      <p>Jails, ports, ...</p>
+					    </div>
+					  </div>
+					</section>
 
-            <section>
-                <h5>MacOS</h5>
-                <div class="container_12">
-                    <div class="grid_7">
-                        <p>Basé sur UNIX et BSD et adapté pour <i class="fa fa-apple"></i></p>
-                        <p>Pas si home-made que ça</p>
-                    </div>
-										<div class="grid_5">
-										    <img style="width: 300px;" src="img/elCapitan.jpg"/>
-										</div>
-					      </div>
-            </section>
+					<section>
+					  <h5>MacOS</h5>
+					  <div class="container_12">
+					    <div class="grid_7">
+					    <br>
+					    <br>
+					      <p>Basé sur UNIX et BSD et adapté pour <i class="fa fa-apple"></i>. Pas si home-made que ça</p>
+					    </div>
+					    <div class="grid_5">
+					      <img style="width: 300px;" src="img/elCapitan.jpg"/>
+					    </div>
+					  </div>
+					</section>
 
-            <section>
-                <h5>Solaris, Plan9, MirageOS, ...</h5>
-                <div class="container_12">
-                    <div class="grid_12">
-                        <p>Des tonnes de déclinaisons</p>
-                        <p>Pour tous les usages (embarqué, temps-réel, sécurité, ...)</p>
-                    </div>
-					      </div>
-            </section>
+					<section>
+					  <h5>Solaris, Plan9, MirageOS, ...</h5>
+					  <div class="container_12">
+					    <div class="grid_12">
+					      <p>Des tonnes de déclinaisons</p>
+					      <p>Pour tous les usages (embarqué, temps-réel, sécurité, ...)</p>
+					    </div>
+					  </div>
+					</section>
+				</section>
 
-        </section>
 
-
-        <!-- Thooms's part -->
+				<!-- Thooms's part -->
 				<section class="stack">
-            <h2>Allons plus loin</h2>
+					<h2>Allons plus loin</h2>
 
-            <section>
-					      <div class="container_12">
-                    <div class="grid_12 fragment">
-                        <ul>
-                            <li>Une liste de sujets intéressants</li>
-                            <li>Choisissez en un, et lisez 15 minutes dessus !</li>
-                            <li>Aussi valable dans le monde Windows, mais moins visible.</li>
-                        </ul>
-                    </div>
-					      </div>
-            </section>
+					<section>
+					  <div class="container_12">
+					    <div class="grid_12 fragment">
+					      <ul>
+					        <li>Une liste de sujets intéressants</li>
+					        <li>Choisissez en un, et lisez 15 minutes dessus !</li>
+					        <li>Aussi valable dans le monde Windows, mais moins visible.</li>
+					      </ul>
+					    </div>
+					  </div>
+					</section>
 
-            <section>
-					      <div class="container_12">
-                    <div class="grid_12 fragment">
-                        <ul>
-                            <li>Know your system!</li>
-                            <li>Une bonne dose de choses cools à
-                            connaître: ZFS (un système de fichier qui
-                            poutre), les ACL (gestion fine des droits
-                            sur les fichiers)</li>
-                        </ul>
-                    </div>
-					      </div>
-            </section>
-
+					<section>
+					<div class="container_12">
+					  <h4>Know your system!</h4>
+					  <div class="grid_12 fragment">
+					    <p>Une bonne dose de choses cools à connaître: </p>
+					    <ul>
+					      <li>ZFS (un système de fichier qui poutre),</li>
+					      <li>ACL (gestion fine des droits sur les fichiers)</li>
+					    </ul>
+					  </div>
+					</div>
+					</section>
 				</section>
 
-        <section>
-            <h2>Structure des systèmes UNIX</h2>
+				<section class="stack">
+					<h2>Structure des systèmes UNIX</h2>
+				</section>
+				
+				<section>
+					<section>
+						<h2>La grande question</h2>
+						<div class="container_12">
+						  <div class="grid_6 fragment">
+						    <ul>
+						      <li>Linux vs GNU/Linux</li>
+						      <li>Richard Stallman</li>
+						    </ul>
+						  </div>
+						  <div class="grid_6 fragment">
+						    <img src="img/rms.jpeg" />
+						  </div>
+						</div>
+					</section>
+					<section>
+					<h4>Un dessin ?</h4>
+					  <div class="container_12">
+					    <div class="grid_6 fragment">
+					      À lancer les programmes
+					    </div>
+					    <div class="grid_6 fragment">
+					      Notion d'ordonnancement, de concurrence, d'allocation mémoire
+					    </div>
+					  </div>
+					</section>
+					<section>
+					  <div class="container_12">
+					    <div class="grid_6 fragment">
+					      À gérer les utilisateurs
+					    </div>
+					    <div class="grid_6 fragment">
+					      Droits sur les fichiers, relations avec l'ordonnancement
+					    </div>
+					  </div>
+					</section>
+					<section>
+					  <div class="container_12">
+					  	<div class="grid_6 fragment">
+					    	<img src="img/unix-archi.jpg" style="width: 50%;" />
+					  	</div>
+					  	<div class="grid_6 fragment">
+					    	<p>Nous naviguerons autour des deux</p>
+					  	</div>
+						</div>
+					</section>
+				</section>
+				<section class="stack">
+					<h4>Et donc, Linux ça sert à quoi ?</h4>
+
+					<section>
+					  <div class="container_12">
+					    <div class="grid_6 fragment">
+					      À gérer les fichiers:
+					    </div>
+					    <div class="grid_6 fragment">
+					      Ext4, NTFS, BrtFS, ZFS, ...
+					    </div>
+					  </div>
+					</section>
+
+					<section>
+					  <div class="container_12">
+					    <div class="grid_6 fragment">
+					      Plus généralement, à gérer le matériel:
+					    </div>
+					    <div class="grid_6 fragment">
+					      Drivers, réseau, ...
+					    </div>
+					  </div>
+					</section>
+
+					<section>
+					  <div class="container_12">
+					    <div class="grid_6 fragment">
+					      À lancer les programmes
+					    </div>
+					    <div class="grid_6 fragment">
+					      Notion d'ordonnancement, de concurrence, d'allocation mémoire
+					    </div>
+					  </div>
+					</section>
+
+					<section>
+					  <div class="container_12">
+					    <div class="grid_6 fragment">
+					      À gérer les utilisateurs
+					    </div>
+					    <div class="grid_6 fragment">
+					      Droits sur les fichiers, relations avec l'ordonnancement
+					    </div>
+					  </div>
+					</section>
+
+					<section>
+					  <div class="container_12">
+					    <div class="grid_12 fragment">
+					      <img src="img/htop.png" style="height: 640px;" />aux autres
+					    </div>
+					  </div>
+					</section>
+
+					<section>
+					  <div class="container_12">
+					    <div class="grid_12 fragment">
+					      <p>Le noyau (Linux ici) est le chef
+					        d'orchestre de tout ce beau monde</p>
+					      <p>Mais qui lance le noyau ?</p>
+					    </div>
+					  </div>
+					</section>
+
+					<section>
+					  <h4>Le bootloader !</h4>
+					  <div class="container_12">
+					    <div class="grid_12 fragment">
+					    	<p>Quelques lignes d'assembleur qui chargent l'OS en mémoire</p>
+					      <p>Assembleur: langage bas niveau quasimentisomorphe au code
+									machine.</p>
+					    </div>
+					  </div>
+					</section>
 				</section>
 
-        <section>
-            <h2>La grande question</h2>
+				<section class="stack">
+					<h4>Une philosophie autour de Linux</h4>
+
+					<section>
+					  <h5>Dans la lignée de l'Open Source</h5>
 					  <div class="container_12">
-                <div class="grid_6 fragment">
-                    <ul>
-                        <li>Linux vs GNU/Linux</li>
-                        <li>Richard Stallman</li>
-                    </ul>
-                </div>
-                <div class="grid_6 fragment">
-                    <img src="img/rms.jpeg" />
-                </div>
+					    <div class="grid_12 fragment">
+					      <p>Unix was not designed to stop its users
+					      from doing stupid things, as that would also
+					      stop them from doing clever things.</p>
+					    </div>
 					  </div>
-        </section>
+					</section>
 
-        <section>
-            <h4>Un dessin ?</h4>
+					<section>
+					  <h5>Flexibilité, qualité</h5>
 					  <div class="container_12">
-                <div class="grid_6 fragment">
-                    <img src="img/unix-archi.jpg" style="width: 50%;" />
-                </div>
-                <div class="grid_6 fragment">
-                    <p>Nous naviguerons autour des deux</p>
-                </div>
-					  </div>
-        </section>
-
-        <section class="stack">
-            <h4>Et donc, Linux ça sert à quoi ?</h4>
-
-            <section>
-                <div class="container_12">
-                    <div class="grid_6 fragment">
-                        À gérer les fichiers:
-                    </div>
-                    <div class="grid_6 fragment">
-                        Ext4, NTFS, BrtFS, ZFS, ...
-                    </div>
-					      </div>
-            </section>
-
-            <section>
-                <div class="container_12">
-                    <div class="grid_6 fragment">
-                        Plus généralement, à gérer le matériel:
-                    </div>
-                    <div class="grid_6 fragment">
-                        Drivers, réseau, ...
-                    </div>
-					      </div>
-            </section>
-
-            <section>
-                <div class="container_12">
-                    <div class="grid_6 fragment">
-                        À lancer les programmes
-                    </div>
-                    <div class="grid_6 fragment">
-                        Notion d'ordonnancement, de concurrence, d'allocation mémoire
-                    </div>
-					      </div>
-            </section>
-
-            <section>
-                <div class="container_12">
-                    <div class="grid_6 fragment">
-                        À gérer les utilisateurs
-                    </div>
-                    <div class="grid_6 fragment">
-                        Droits sur les fichiers, relations avec l'ordonnancement
-                    </div>
-					      </div>
-            </section>
-
-            <section>
-                <div class="container_12">
-                    <div class="grid_12 fragment">
-                        <img src="img/htop.png" style="height: 640px;" />
-                    </div>
-					      </div>
-            </section>
-
-            <section>
-                <div class="container_12">
-                    <div class="grid_12 fragment">
-                        <p>Le noyau (Linux ici) est le chef
-                            d'orchestre de tout ce beau monde</p>
-                        <p>Mais qui lance le noyau ?</p>
-                    </div>
-					      </div>
-            </section>
-
-            <section>
-                <h4>Le bootloader !</h4>
-                <div class="container_12">
-                    <div class="grid_12 fragment">
-                        <p>Quelques lignes d'assembleur qui chargent l'OS en mémoire</p>
-                        <p>Assembleur: langage bas niveau quasiment
-                        isomorphe au code machine.</p>
-                    </div>
-					      </div>
-            </section>
-        </section>
-
-        <section class="stack">
-            <h4>Une philosophie autour de Linux</h4>
-
-            <section>
-                <h5>Dans la lignée de l'Open Source</h5>
-                <div class="container_12">
-                    <div class="grid_12 fragment">
-                        <p>Unix was not designed to stop its users
-                        from doing stupid things, as that would also
-                        stop them from doing clever things.</p>
-                    </div>
-					      </div>
-            </section>
-
-            <section>
-                <h5>Flexibilité, qualité</h5>
-                <div class="container_12">
-                    <div class="grid_12 fragment">
-                        <pre class="fragment" style="margin-bottom: -10%"><code class="python">
+					    <div class="grid_12 fragment">
+					      <pre class="fragment" style="margin-bottom: -10%"><code class="python">
 $ curl 'http://yolo.org' \
-  | python learn.py \
-  | xmllint --format - \
-  | curl -d @- http://bisous.xxx
-						</code></pre>
-                    </div>
-					      </div>
-            </section>
+| python learn.py \
+| xmllint --format - \
+| curl -d @- http://bisous.xxx
+								</code></pre>
+					    </div>
+					  </div>
+					</section>
 
-            <section>
-                <h5>Un énorme système de LEGO</h5>
-                <div class="container_12">
-                    <div class="grid_12 fragment">
-                        <p>Système d'init, package manager, environnement
-                            de bureau, shell, noyau, ...</p>
-                        <p>Tout est interchangeable (ou presque)</p>
-                    </div>
-					      </div>
-            </section>
-        </section>
+					<section>
+					  <h5>Un énorme système de LEGO</h5>
+					  <div class="container_12">
+					    <div class="grid_12 fragment">
+					      <p>Système d'init, package manager, environnement
+					        de bureau, shell, noyau, ...</p>
+					      <p>Tout est interchangeable (ou presque)</p>
+					    </div>
+					  </div>
+					</section>
+				</section>
 
-        <section>
-                <h5>Conclusion</h5>
-        </section>
+				<section>
+				  <h5>Conclusion</h5>
+				</section>
 
-        <section>
-                <h5>Des questions ?</h5>
-        </section>
+				<section>
+				  <h5>Des questions ?</h5>
+				</section>
 			</div>
-
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
 		<script src="js/reveal.js"></script>
-
 		<script>
-
 			// Full list of configuration options available at:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
-				controls: true,
-				progress: true,
-				history: true,
-				center: true,
-
-				transition: 'slide', // none/fade/slide/convex/concave/zoom
-
-				// Optional reveal.js plugins
-				dependencies: [
-					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
-					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
-					{ src: 'plugin/zoom-js/zoom.js', async: true },
-					{ src: 'plugin/notes/notes.js', async: true },
-					{ src: 'plugin/math/math.js', async: true },
-					{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } }
-				]
+			controls: true,
+			progress: true,
+			history: true,
+			center: true,
+			transition: 'slide', // none/fade/slide/convex/concave/zoom
+			// Optional reveal.js plugins
+			dependencies: [
+			{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+			{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+			{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } },
+			{ src: 'plugin/zoom-js/zoom.js', async: true },
+			{ src: 'plugin/notes/notes.js', async: true },
+			{ src: 'plugin/math/math.js', async: true },
+			{ src: 'plugin/highlight/highlight.js', async: true, condition: function() { return !!document.querySelector( 'pre code' ); }, callback: function() { hljs.initHighlightingOnLoad(); } }
+			]
 			});
-
 		</script>
 
 	</body>
